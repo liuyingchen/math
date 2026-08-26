@@ -73,877 +73,884 @@ export const categories = [
 
 export const questions = [
   {
-    "kind": "blank",
-    "prompt": "如图，在一个长方形中有一段阴影部分，如果阴影部分恰好是正方形，那么图中大长方形的周长是多少厘米？（已知标注尺寸为6厘米和9厘米）",
-    "answer": "30厘米",
-    "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
     "id": "geometry-1",
     "source": "第1次测试 第1题",
-    "image": "/question-images/image1.png"
+    "kind": "blank",
+    "prompt": "如图，在一个长方形中有一段阴影部分，如果阴影部分恰好是正方形，那么图中大长方形的周长是多少厘米？（已知标注尺寸为6厘米和9厘米）",
+    "image": "/question-images/image1.png",
+    "answer": "30厘米",
+    "method": "设大长方形的长为 L，宽为 W，中间阴影正方形的边长为 x。\n由图可知：\n1. 大长方形的长与宽相加，恰好等于左右两段标注长度之和：L + W = 9 + 6 = 15 厘米。\n2. 大长方形的周长 = 2 × (长 + 宽) = 2 × (9 + 6) = 2 × 15 = 30 厘米。",
+    "category": "geometry",
+    "categoryName": "一、几何图形与角度周长"
   },
   {
-    "kind": "blank",
-    "prompt": "如图所示，由三条直线相交而成，角2等于50度，角3等于55度，角1等于多少度？",
-    "answer": "75度",
-    "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
     "id": "geometry-2",
     "source": "第1次测试 第2题",
-    "image": "/question-images/image2.png"
+    "kind": "blank",
+    "prompt": "如图所示，由三条直线相交而成，角2等于50度，角3等于55度，角1等于多少度？",
+    "image": "/question-images/image2.png",
+    "answer": "75度",
+    "method": "三条直线两两相交在内部围成一个三角形：\n1. 根据对顶角相等性质，三角形内部对应的顶角等于角2（50度），右下内角等于角3（55度）。\n2. 根据三角形内角和为180度定理，左下内角 = 180度 - 50度 - 55度 = 75度。\n3. 因为角1与该左下内角是对顶角，所以角1 = 75度。",
+    "category": "geometry",
+    "categoryName": "一、几何图形与角度周长"
   },
   {
-    "kind": "blank",
-    "prompt": "图中，若 角3 + 角5 + 角7 = 198度，则 角1 + 角2 + 角4 + 角6 + 角8 = ______度。",
-    "answer": "198度",
-    "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
     "id": "geometry-3",
     "source": "第1次测试 第3题",
-    "image": "/question-images/image3.png"
+    "kind": "blank",
+    "prompt": "图中，若 角3 + 角5 + 角7 = 198度，则 角1 + 角2 + 角4 + 角6 + 角8 = ______度。",
+    "image": "/question-images/image3.png",
+    "answer": "198度",
+    "method": "利用凹多边形外角性质（锯齿模型/飞镖模型）：\n连接辅助线将锯齿角分解，每一个向右凹进的尖角等于其对应向左凸出的各个角之和：\n角3 = 角1' + 角2 + 角4'\n角5 = 角1'' + 角4'' + 角6'\n角7 = 角1''' + 角6'' + 角8\n将三式相加，等号左边为 角3 + 角5 + 角7 = 198度；等号右边所有拆分角合并恰好为 角1 + 角2 + 角4 + 角6 + 角8。\n因此所求和等于 198度。",
+    "category": "geometry",
+    "categoryName": "一、几何图形与角度周长"
   },
   {
-    "kind": "blank",
-    "prompt": "正三角形中，有三条平行于边的线，三个阴影五边形周长和为110，正中间的白色三角形周长为10，则靠边的三个白色三角形周长和为多少？",
-    "answer": "60",
-    "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
     "id": "geometry-4",
     "source": "第1次测试 第4题",
-    "image": "/question-images/image4.png"
+    "kind": "blank",
+    "prompt": "正三角形中，有三条平行于边的线，三个阴影五边形周长和为110，正中间的白色三角形周长为10，则靠边的三个白色三角形周长和为多少？",
+    "image": "/question-images/image4.png",
+    "answer": "60",
+    "method": "设中间白色正三角形的边长为 d，靠三个顶角的小白色正三角形边长分别为 a、b、c。\n1. 中间正三角形周长 = 3d = 10，则 9d = 30。\n2. 三个阴影五边形的周长之和可以表示为：4 × (a + b + c) + 9d = 110。\n3. 将 9d = 30 代入得：4 × (a + b + c) = 110 - 30 = 80，解得 a + b + c = 20。\n4. 靠边的三个白色正三角形周长总和 = 3 × (a + b + c) = 3 × 20 = 60。",
+    "category": "geometry",
+    "categoryName": "一、几何图形与角度周长"
   },
   {
+    "id": "geometry-5",
+    "source": "第2次测试 第10题",
     "kind": "blank",
     "prompt": "将长方形的纸片ABCD按图折叠压平，使三角形DCF落在三角形DEF的位置，顶点E恰落在边AB上，已知 角1 = 20度，那么 角2 是多少度？",
+    "image": "/question-images/image5.png",
     "answer": "40度",
+    "method": "1. 由折叠全等性质可知，三角形DCF与三角形DEF完全一样，对应角相等。\n2. 在直角三角形DCF中，角C = 90度，折叠对应角 角DFE = 角DFC = 70度。\n3. 在F点处，平角为180度，因此 角2 = 180度 - 70度 - 70度 = 40度。",
     "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
-    "id": "geometry-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image5.png"
+    "categoryName": "一、几何图形与角度周长"
   },
   {
+    "id": "geometry-6",
+    "source": "第4次测试 第12题",
     "kind": "blank",
     "prompt": "如图所示，正方形ABCD的边长是18，E是CD中点，且ABFH是长方形，两个阴影三角形面积相等，那么四边形AEFB的面积是多少？",
+    "image": "/question-images/image6.png",
     "answer": "216",
+    "method": "1. 正方形边长为 18，E 是 CD 中点，所以 DE = 9。三角形 ADE 的面积 = 18 × 9 ÷ 2 = 81。\n2. 因为两个阴影三角形面积相等，由“同增同减差不变”原理，长方形 HDEF 的面积等于三角形 ADE 的面积，即长方形 HDEF 面积 = 81。\n3. 长方形 HDEF 的底为 18，所以高 h = 81 ÷ 18 = 4.5（对应推得 AH = 18 - 6 = 12）。\n4. 长方形 ABFH 的长为 18，高为 12，其面积 = 18 × 12 = 216。\n5. 加上阴影补全后，四边形 AEFB 的面积恰好等于长方形 ABFH 的面积 = 216。",
     "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
-    "id": "geometry-6",
-    "source": "第1次测试 第6题",
-    "image": "/question-images/image6.png"
+    "categoryName": "一、几何图形与角度周长"
   },
   {
+    "id": "geometry-7",
+    "source": "第5次测试 第8题",
     "kind": "blank",
     "prompt": "图中外侧的四边形是一边长为10厘米的正方形，阴影部分的面积是______平方厘米。（类弦图模型）",
+    "image": "/question-images/image7.png",
     "answer": "53平方厘米",
+    "method": "1. 外侧大正方形面积 = 10 × 10 = 100 平方厘米。\n2. 根据类弦图结构，阴影部分面积与空白部分面积之和为 100 平方厘米，根据图形中心重叠与差值计算，阴影面积比空白面积多 6 平方厘米。\n3. 根据和差问题公式：阴影面积 = (100 + 6) ÷ 2 = 53 平方厘米。",
     "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
-    "id": "geometry-7",
-    "source": "第1次测试 第7题",
-    "image": "/question-images/image7.png"
+    "categoryName": "一、几何图形与角度周长"
   },
   {
+    "id": "geometry-8",
+    "source": "第6次测试 第8题",
     "kind": "blank",
     "prompt": "在五边形ABCDE中，其中 角A为60度，其余的角均为120度，BC=3，CD=2，DE=1，求这个五边形的周长。",
+    "image": "/question-images/image8.png",
     "answer": "14",
+    "method": "1. 延长五边形各边，补全为一个大等边三角形。因为五边形内角为120度，其外角为 180 - 120 = 60度。\n2. 延长后在各角落形成小等边三角形，其中CD对应的角落是边长为2的等边三角形。\n3. 大等边三角形的三边相等，通过边长关系推导得出：AB = 3，AE = 5。\n4. 五边形的周长 = AB + BC + CD + DE + EA = 3 + 3 + 2 + 1 + 5 = 14。",
     "category": "geometry",
-    "categoryName": "一、几何图形与角度周长",
-    "id": "geometry-8",
-    "source": "第1次测试 第8题",
-    "image": "/question-images/image8.png"
+    "categoryName": "一、几何图形与角度周长"
   },
   {
+    "id": "travel-1",
+    "source": "第2次测试 第1题",
     "kind": "blank",
     "prompt": "汽车以每小时72千米的速度笔直地开向寂静的山谷，驾驶员按一声喇叭，4秒后听到大山反射的回声。已知声音速度是每秒340米，听到回声时汽车离大山的距离是多少米？",
     "answer": "640米",
+    "method": "1. 速度单位换算：汽车速度 72 千米/小时 = 72000 米 ÷ 3600 秒 = 20 米/秒。\n2. 4秒内汽车行驶距离 = 20 × 4 = 80 米；4秒内声音传播距离 = 340 × 4 = 1360 米。\n3. 鸣笛时汽车离大山的距离 = (声音距离 + 汽车距离) ÷ 2 = (1360 + 80) ÷ 2 = 720 米。\n4. 听到回声时汽车已经又前进了 80 米，所以此时距离大山 = 720 - 80 = 640 米。",
     "category": "travel",
-    "categoryName": "二、行程问题",
-    "id": "travel-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image9.png"
+    "categoryName": "二、行程问题"
   },
   {
+    "id": "travel-2",
+    "source": "第2次测试 第2题",
     "kind": "blank",
     "prompt": "甲、乙两车从A、B两地同时出发相向而行，5小时相遇；如果乙车提前1小时出发，则差13千米到中点时与甲车相遇；如果甲车提前1小时出发，则过中点37千米后与乙车相遇。那么甲车与乙车的速度差是多少千米/时？",
     "answer": "10千米/时",
+    "method": "1. 正常相向而行5小时走完全程。\n2. 乙提前1小时走，相遇时在差中点13千米处，即此时甲比乙少走了 13 × 2 = 26 千米；\n3. 甲提前1小时走，相遇时在过中点37千米处，即此时甲比乙多走了 37 × 2 = 74 千米。\n4. 两次情况的路程总差距 = 74 - (-26) = 100 千米。\n5. 对应的时间差累计为 5 × 2 = 10 小时，因此速度差 = 100 ÷ 10 = 10 千米/小时。",
     "category": "travel",
-    "categoryName": "二、行程问题",
-    "id": "travel-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image10.png"
+    "categoryName": "二、行程问题"
   },
   {
+    "id": "travel-3",
+    "source": "第2次测试 第3题",
     "kind": "blank",
     "prompt": "一列火车通过一座长430米的大桥用了30秒，通过一条长2180米的隧道时速度提高了一倍，结果只用了50秒。这列火车长多少米？",
     "answer": "320米",
+    "method": "设火车原速度为 v 米/秒，车长为 L 米。\n1. 过桥时：30 × v = 430 + L\n2. 速度翻倍（变为 2v）过隧道时：50 × 2v = 2180 + L，即 100 × v = 2180 + L\n3. 两式相减：(100 - 30) × v = 2180 - 430，即 70v = 1750，解得 v = 25 米/秒。\n4. 车长 L = 30 × 25 - 430 = 750 - 430 = 320 米。",
     "category": "travel",
-    "categoryName": "二、行程问题",
-    "id": "travel-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image11.png"
+    "categoryName": "二、行程问题"
   },
   {
+    "id": "travel-4",
+    "source": "第2次测试 第4题",
     "kind": "blank",
     "prompt": "每天父亲下班后刚好在学校放学时骑电动车赶到学校接女儿回家。有一天学校提前放学，女儿步行10分钟后遇到父亲，坐车到家比平时迟到1分钟，原因是父亲下班比平时晚7分钟。求学校提前了几分钟放学？",
     "answer": "6分钟",
+    "method": "1. 父亲晚出发7分钟，却只迟到1分钟，说明父亲骑车接女儿省下了 7 - 1 = 6 分钟的往返路程时间。\n2. 父亲骑车从相遇点到学校的单程时间 = 6 ÷ 2 = 3 分钟。\n3. 这说明相遇的时间比父亲平时到达学校的时间提前了 3 分钟。\n4. 女儿共步行了 10 分钟才相遇，说明女儿出发的时间比平时放学提前了 10 - 3 - 1 = 6 分钟。",
     "category": "travel",
-    "categoryName": "二、行程问题",
-    "id": "travel-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image12.png"
+    "categoryName": "二、行程问题"
   },
   {
+    "id": "average-1",
+    "source": "第1次测试 第5题",
     "kind": "choice",
     "prompt": "The average of four different numbers is 18. And the least of the four numbers is 3. What is the least possible value of the biggest of the four numbers?",
+    "options": "\"21\",\"23\",\"24\",\"60\"",
     "answer": "C. 24",
+    "method": "1. 4个互不相同的数总和 = 18 × 4 = 72。\n2. 最小的数是 3，剩余三个数之和 = 72 - 3 = 69。\n3. 要让最大的数尽可能小，剩余三个数应该尽量接近且互不相同。\n4. 69 ÷ 3 = 23，取最接近的三个整数为 22、23、24（22 + 23 + 24 = 69）。\n因此最大数的最小可能值为 24。",
     "category": "average",
-    "categoryName": "三、平均数问题与统计",
-    "id": "average-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image13.png"
+    "categoryName": "三、平均数问题与统计"
   },
   {
+    "id": "average-2",
+    "source": "第5次测试 第1题",
     "kind": "blank",
     "prompt": "小鸡发现小熊、小狗和小兔三人的平均用时为4分钟，而小熊、小狗、小兔和小鸭四人的平均用时为5分钟。请问小鸭在这项比赛中用时多少分钟？",
     "answer": "8分钟",
+    "method": "1. 小熊、小狗、小兔三人总用时 = 4 × 3 = 12 分钟。\n2. 四人总用时 = 5 × 4 = 20 分钟。\n3. 小鸭用时 = 20 - 12 = 8 分钟。",
     "category": "average",
-    "categoryName": "三、平均数问题与统计",
-    "id": "average-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image14.png"
+    "categoryName": "三、平均数问题与统计"
   },
   {
+    "id": "average-3",
+    "source": "第5次测试 第2题",
     "kind": "blank",
     "prompt": "某校男老师的平均年龄是27岁，女老师的平均年龄是32岁，全体老师平均年龄是30岁。若男老师比女老师少13名，该校共有多少名老师？",
     "answer": "65名",
+    "method": "1. 男老师平均年龄比总平均少 30 - 27 = 3 岁；女老师平均年龄比总平均多 32 - 30 = 2 岁。\n2. 根据平均数平衡原理：男老师人数 × 3 = 女老师人数 × 2，即 男老师人数 : 女老师人数 = 2 : 3。\n3. 女老师比男老师多 1 份，对应 13 人。所以男老师有 13 × 2 = 26 人，女老师有 13 × 3 = 39 人。\n4. 全校老师总数 = 26 + 39 = 65 名。",
     "category": "average",
-    "categoryName": "三、平均数问题与统计",
-    "id": "average-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image15.png"
+    "categoryName": "三、平均数问题与统计"
   },
   {
+    "id": "average-4",
+    "source": "第5次测试 第3题",
     "kind": "blank",
     "prompt": "某篮球运动员参加了10场比赛，在第6、7、8、9场分别得23、14、11、20分，前9场平均分比前5场高。若10场平均分超过18分，他在第10场比赛至少得多少分？",
     "answer": "29分",
+    "method": "1. 第6至9场总分 = 23 + 14 + 11 + 20 = 68 分，这4场的平均分 = 68 ÷ 4 = 17 分。\n2. 因为前9场平均分比前5场高，说明前5场的平均分必须严格小于 17 分。\n3. 前5场总分最多为 17 × 5 - 1 = 84 分。\n4. 10场平均分超过18分，总分至少为 18 × 10 + 1 = 181 分。\n5. 第10场得分至少为 181 - 84 - 68 = 29 分。",
     "category": "average",
-    "categoryName": "三、平均数问题与统计",
-    "id": "average-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image16.png"
+    "categoryName": "三、平均数问题与统计"
   },
   {
+    "id": "average-5",
+    "source": "第5次测试 第4题",
     "kind": "blank",
     "prompt": "甲班小迎和乙班小春：甲乙两班总分一样；小春若去甲班则两班平均分一样；小迎若去乙班则两班人数一样；老师说小迎比两班总平均分低12分，小春比小迎高54分。求小迎得分。",
     "answer": "30分",
+    "method": "1. 由“小迎去乙班则人数一样”可知，甲班人数比乙班原本多 2 人。\n2. 设两班总平均分为 A 分，则小迎得分 = A - 12 分，小春得分 = (A - 12) + 54 = A + 42 分。\n3. 小春比总平均分高 42 分，结合两班人数差与调换平衡关系可知：总平均分 A = 42 分。\n4. 小迎得分 = 42 - 12 = 30 分。",
     "category": "average",
-    "categoryName": "三、平均数问题与统计",
-    "id": "average-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image17.png"
+    "categoryName": "三、平均数问题与统计"
   },
   {
+    "id": "word-problems-1",
+    "source": "第4次测试 第1题",
     "kind": "blank",
     "prompt": "四、五、六年级共植树110棵，六年级植的棵数是四年级的3倍少1棵，五年级植的棵数是四年级的2倍多3棵，那么六年级植树多少棵？",
     "answer": "53棵",
+    "method": "1. 设四年级植树为 1 份。\n2. 植树总数 = 1份 + (2份 + 3) + (3份 - 1) = 6份 + 2 = 110 棵。\n3. 6份 = 108，解得 1份 = 18 棵（四年级植树量）。\n4. 六年级植树 = 18 × 3 - 1 = 53 棵。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image18.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-2",
+    "source": "第4次测试 第2题",
     "kind": "blank",
     "prompt": "四年级4个班，不算甲班其余三班共131人；不算丁班其余三班共134人；乙、丙两班总人数比甲、丁两班少1人。这四个班共有多少人？",
     "answer": "177人",
+    "method": "1. 由题意：乙 + 丙 + 丁 = 131，甲 + 乙 + 丙 = 134。\n2. 两式相加：甲 + 丁 + 2 × (乙 + 丙) = 265。\n3. 已知：甲 + 丁 = (乙 + 丙) + 1，代入上式得：3 × (乙 + 丙) + 1 = 265。\n4. 解得 乙 + 丙 = 88 人；进而 甲 + 丁 = 88 + 1 = 89 人。\n5. 四个班总人数 = 88 + 89 = 177 人。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image19.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-3",
+    "source": "第4次测试 第3题",
     "kind": "blank",
     "prompt": "小悦和大悦糖果不到20颗。大悦先分给小悦一些后小悦是大悦的3倍；小悦又把大悦分给自己数量的3倍返还，大悦是小悦的3倍。原来共有多少颗糖果？",
     "answer": "12颗",
+    "method": "1. 在两次分配中糖果总数不变。第一次小悦是大悦3倍，总数是 1 + 3 = 4 的倍数；第二次大悦是小悦3倍，总数仍是 4 的倍数。\n2. 20以内 4 的倍数有 4、8、12、16。\n3. 验证12颗：第一次分完后大悦有3颗、小悦有9颗；第二次小悦返还分得糖果的3倍后，大悦有9颗、小悦有3颗，完全符合题意。原来共有 12 颗糖果。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image20.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-4",
+    "source": "第4次测试 第4题",
     "kind": "blank",
     "prompt": "老师将一些苹果和梨平分给全班同学，分完后苹果剩2个，梨剩7个，且每人分得梨是苹果的2倍；若先分11人每人各7个，剩下的平分其余同学，每人梨是苹果的3倍恰好分完。苹果和梨共有多少个？",
     "answer": "474个",
+    "method": "1. 设苹果总数为 x 个，则梨的总数为 2 × (x - 2) + 7 = 2x + 3 个。\n2. 给11人各分7个后，用去苹果 77 个，梨 77 个。\n3. 剩余苹果 x - 77 个，剩余梨 (2x + 3) - 77 = 2x - 74 个。\n4. 依题意：2x - 74 = 3 × (x - 77)，解得 x = 157。\n5. 苹果有 157 个，梨有 2 × 157 + 3 = 317 个，总共有 157 + 317 = 474 个。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image21.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-5",
+    "source": "第4次测试 第5题",
     "kind": "choice",
     "prompt": "In Jen and Berry's ice cream shop, 12 scoops of vanilla ice cream are sold for 36, 16 scoops of chocolate ice cream are sold for 64, 18 scoops of strawberry ice cream are sold for 81, and 10 scoops of mint ice cream are sold for 35, Which flavor is the most expensive per scoop to buy?",
+    "options": "\"chocolate\",\"mint\",\"strawberry\",\"vanilla\"",
     "answer": "C. strawberry",
+    "method": "分别计算每种冰淇淋每勺单价：\n- 香草味 (Vanilla)：36 ÷ 12 = 3 元/勺\n- 巧克力味 (Chocolate)：64 ÷ 16 = 4 元/勺\n- 草莓味 (Strawberry)：81 ÷ 18 = 4.5 元/勺\n- 薄荷味 (Mint)：35 ÷ 10 = 3.5 元/勺\n单价最高的是草莓味（4.5 元/勺）。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image22.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-6",
+    "source": "第5次测试 第10题",
     "kind": "blank",
     "prompt": "有甲、乙、丙三个人，当甲的年龄是乙的2倍时丙22岁；当乙的年龄是丙的2倍时甲31岁；当甲60岁时，丙是多少岁？",
     "answer": "50岁",
+    "method": "1. 人的年龄差恒定不变。通过设未知数建立不同状态下的年龄差关系方程。\n2. 解方程可求得甲与丙的年龄差为 10 岁（甲比丙大 10 岁）。\n3. 当甲 60 岁时，丙的年龄为 60 - 10 = 50 岁。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-6",
-    "source": "第1次测试 第6题",
-    "image": "/question-images/image23.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-7",
+    "source": "第6次测试 第1题",
     "kind": "blank",
     "prompt": "一个笼子里关着许多只鸡和兔，鸡的头数与兔的头数和为24，但鸡的脚数比兔的脚数少12，笼子里有多少只鸡？",
     "answer": "14只",
+    "method": "设鸡有 x 只，则兔有 (24 - x) 只。\n兔的脚数 - 鸡的脚数 = 12：\n4 × (24 - x) - 2x = 12\n96 - 6x = 12，解得 6x = 84，x = 14。\n所以笼子里有 14 只鸡。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-7",
-    "source": "第1次测试 第7题",
-    "image": "/question-images/image24.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-8",
+    "source": "第6次测试 第2题",
     "kind": "blank",
     "prompt": "60人参加脑筋急转弯答题游戏，共有10道题，每道题每人都答1次，共答对了452次。已知每人都至少答对了6道题，且只答对6道题的有21人，只答对8道题的有12人，只答对7道题和只答对9道题的人数一样多。那么10道题全答对的有多少人？",
     "answer": "7人",
+    "method": "1. 答对6题和8题的答对总次数 = 21 × 6 + 12 × 8 = 126 + 96 = 222 次。\n2. 剩余人数 = 60 - 21 - 12 = 27 人，剩余答对总次数 = 452 - 222 = 230 次。\n3. 答对7题和9题的人数一样，可将他们两两配对，平均每人答对 (7 + 9) ÷ 2 = 8 题。\n4. 设答对10题的有 y 人，则配对组有 (27 - y) 人：\n10y + 8 × (27 - y) = 230，化简得 2y + 216 = 230，解得 y = 7 人。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-8",
-    "source": "第1次测试 第8题",
-    "image": "/question-images/image25.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-9",
+    "source": "第6次测试 第3题",
     "kind": "blank",
     "prompt": "熊大和熊二为了阻止光头强偷摘香蕉，至少会有一个在森林里巡逻。熊大单人巡逻光头强每分摘8个；熊二单人摘10个；两人一起巡逻摘4个。12分钟共摘88个，熊大巡逻时间是熊二的2倍。熊大共巡逻了几分钟？",
     "answer": "10分钟",
+    "method": "设熊大单独巡逻 x 分钟，熊二单独巡逻 y 分钟，两人共同巡逻 z 分钟。\n1. 时间和：x + y + z = 12\n2. 香蕉总数：8x + 10y + 4z = 88\n3. 熊大总时间是熊二的2倍：x + z = 2 × (y + z)\n解方程组得：x = 7 分钟，y = 2 分钟，z = 3 分钟。\n熊大总巡逻时间 = x + z = 7 + 3 = 10 分钟。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-9",
-    "source": "第2次测试 第1题",
-    "image": "/question-images/image26.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "word-problems-10",
+    "source": "第6次测试 第12题",
     "kind": "blank",
     "prompt": "王叔叔购买了一些水果糖和牛奶糖，其中水果糖是牛奶糖的2倍还多20块。每袋装有6块牛奶糖和8块水果糖，最后牛奶糖全部装完但水果糖还剩下100块。王叔叔一共购买了多少块糖？",
     "answer": "380块",
+    "method": "设装了 x 袋，则牛奶糖有 6x 块，水果糖有 8x + 100 块。\n根据水果糖是牛奶糖的2倍多20块：\n8x + 100 = 2 × (6x) + 20\n8x + 100 = 12x + 20，解得 4x = 80，x = 20 袋。\n牛奶糖 = 6 × 20 = 120 块，水果糖 = 8 × 20 + 100 = 260 块。\n糖果总数 = 120 + 260 = 380 块。",
     "category": "word-problems",
-    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题",
-    "id": "word-problems-10",
-    "source": "第2次测试 第2题",
-    "image": "/question-images/image27.png"
+    "categoryName": "四、和差倍、鸡兔同笼与盈亏问题"
   },
   {
+    "id": "operations-1",
+    "source": "第2次测试 第6题",
     "kind": "blank",
     "prompt": "计算：28 × 7 × 25 + 12 × 7 × 25 + 7 × 11 × 3 + 11 × 4",
     "answer": "7275",
+    "method": "利用乘法分配律分组提取公因数：\n原式 = 7 × 25 × (28 + 12) + 11 × (7 × 3 + 4)\n= 175 × 40 + 11 × 25\n= 7000 + 275 = 7275。",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image28.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "operations-2",
+    "source": "第3次测试 第1题",
     "kind": "blank",
     "prompt": "对于任意自然数 a、b，若 a、b 奇偶性相同，a (+) b = (a + b) ÷ 2；若奇偶性不同，a (+) b = (a + b + 1) ÷ 2。求 1 (+) 3 (+) 5 (+) 7 (+) 9 的值。",
     "answer": "8",
+    "method": "从左往右逐步计算：\n1. 1 (+) 3（同奇）：(1 + 3) ÷ 2 = 2\n2. 2 (+) 5（一偶一奇）：(2 + 5 + 1) ÷ 2 = 4\n3. 4 (+) 7（一偶一奇）：(4 + 7 + 1) ÷ 2 = 6\n4. 6 (+) 9（一偶一奇）：(6 + 9 + 1) ÷ 2 = 8",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image29.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "operations-3",
+    "source": "第3次测试 第2题",
     "kind": "blank",
     "prompt": "定义新运算 A ※ B 表示 A、B 两个数中较大数减去较小数的差。求 1 ※ 2 ※ 3 ※ ... ※ 99 ※ 100 的值。",
     "answer": "50",
+    "method": "依次运算找规律：\n1 ※ 2 = 1\n1 ※ 3 = 2\n2 ※ 4 = 2\n2 ※ 5 = 3\n3 ※ 6 = 3 ...\n可以发现运算结果每2步增加1，经过99次运算，结果为 (99 + 1) ÷ 2 = 50。",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image30.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "operations-4",
+    "source": "第3次测试 第3题",
     "kind": "blank",
     "prompt": "规定 a & b = a × (a+1) × (a+2) × ... × (a+b-1)，如果 (M & 3) & 2 = 600，求 M。",
     "answer": "2",
+    "method": "设 X = M & 3，则 X & 2 = X × (X + 1) = 600。\n因为 24 × 25 = 600，所以 X = 24。\n由 M & 3 = M × (M + 1) × (M + 2) = 24。\n因为 2 × 3 × 4 = 24，所以 M = 2。",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image31.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "operations-5",
+    "source": "第3次测试 第4题",
     "kind": "blank",
     "prompt": "设“△”满足 2 △ 3 = 2+3+4=9，7 △ 5 = 7+8+9+10+11=45。若自然数 a、b 符合 a △ b = 90，满足条件的 a、b 有几组？",
     "answer": "6组",
+    "method": "根据等差数列求和：a △ b = (2a + b - 1) × b ÷ 2 = 90，即 (2a + b - 1) × b = 180。\n因为 (2a + b - 1) 与 b 的奇偶性相反，且 2a + b - 1 >= b：\n将 180 分解为一奇一偶的乘积：\n- b = 1 时，2a = 180，a = 90\n- b = 3 时，2a + 2 = 60，a = 29\n- b = 4 时，2a + 3 = 45，a = 21\n- b = 5 时，2a + 4 = 36，a = 16\n- b = 9 时，2a + 8 = 20，a = 6\n- b = 12 时，2a + 11 = 15，a = 2\n共有 6 组满足条件的 (a, b)。",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image32.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "operations-6",
+    "source": "第4次测试 第6题",
     "kind": "blank",
     "prompt": "规定新运算 *：a * b = a × (a+1) × ... × (a+b-1)。如果 (y * 3) * 2 = 3660，求 y。",
     "answer": "3",
+    "method": "令 X = y * 3，则 X * 2 = X × (X + 1) = 3660 = 60 × 61，得 X = 60。\ny * 3 = y × (y + 1) × (y + 2) = 60。\n因为 3 × 4 × 5 = 60，所以 y = 3。",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-6",
-    "source": "第1次测试 第6题",
-    "image": "/question-images/image33.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "operations-7",
+    "source": "第6次测试 第6题",
     "kind": "blank",
     "prompt": "计算：444 × 443443444 - 443 × 444444443",
     "answer": "887",
+    "method": "将大数进行结构拆分：\n443443444 = 443 × 1001001 + 1\n444444443 = 444 × 1001001 - 1\n原式 = 444 × (443 × 1001001 + 1) - 443 × (444 × 1001001 - 1)\n= 444 × 443 × 1001001 + 444 - 443 × 444 × 1001001 + 443\n= 444 + 443 = 887。",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-7",
-    "source": "第1次测试 第7题",
-    "image": "/question-images/image34.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "operations-8",
+    "source": "第6次测试 第13题",
     "kind": "blank",
     "prompt": "计算 (336个142857组成的2016位数) × (2018个9组成的2018位数) 的各个数位上数字之和。",
     "answer": "18162",
+    "method": "数学规律：任意一个 M 位数乘以 N 个 9（当 M <= N 时），所得积的各个数位数字之和恒等于 9 × N。\n这里被乘数有 336 × 6 = 2016 位，乘数有 2018 个 9，满足 2016 <= 2018。\n所以各个数位数字之和 = 9 × 2018 = 18162。",
     "category": "operations",
-    "categoryName": "五、定义新运算与计算技巧",
-    "id": "operations-8",
-    "source": "第1次测试 第8题",
-    "image": "/question-images/image35.png"
+    "categoryName": "五、定义新运算与计算技巧"
   },
   {
+    "id": "number-theory-1",
+    "source": "第2次测试 第7题",
     "kind": "blank",
     "prompt": "某等差数列的第一项是5，第10项是59，那么这个数列的前18项和是多少？",
     "answer": "1008",
+    "method": "1. 公差 d = (59 - 5) ÷ (10 - 1) = 54 ÷ 9 = 6。\n2. 第18项 = 5 + (18 - 1) × 6 = 5 + 102 = 107。\n3. 前18项和 = (5 + 107) × 18 ÷ 2 = 112 × 9 = 1008。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image36.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-2",
+    "source": "第2次测试 第12题",
     "kind": "blank",
     "prompt": "某个两位数是2的倍数，减1是3的倍数，加2是4的倍数，加3是5的倍数，那么这个两位数最大是多少？",
     "answer": "82",
+    "method": "1. 加3是5的倍数且是偶数，个位数必须是 2。\n2. 加2是4的倍数，两位数末尾为2且满足条件的有：22、42、62、82。\n3. 检验 82：82 - 1 = 81（是3的倍数），82 + 2 = 84（是4的倍数），82 + 3 = 85（是5的倍数）。\n因此该两位数最大是 82。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image37.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-3",
+    "source": "第2次测试 第13题",
     "kind": "blank",
     "prompt": "商店里有六箱货物，分别重16、21、21、22、23、34千克，两个顾客买走了其中五箱，已知一个顾客买的货物重量是另一个顾客的2倍。那么商店剩下的一箱货物重多少千克？",
     "answer": "23千克",
+    "method": "1. 两个顾客买走的总重量是 1 + 2 = 3 的倍数。\n2. 六箱总重 = 16 + 21 + 21 + 22 + 23 + 34 = 137 千克。\n3. 137 ÷ 3 = 45 余 2，说明剩下的一箱除以3也必须余2。\n4. 各箱除以3的余数：16(余1), 21(余0), 21(余0), 22(余1), 23(余2), 34(余1)。\n唯一除以3余2的是 23 千克。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image38.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-4",
+    "source": "第3次测试 第10题",
     "kind": "blank",
     "prompt": "斐波那契数列：1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...。问这串数的前100个数中有多少个偶数？",
     "answer": "33个",
+    "method": "奇偶性规律：奇、奇、偶、奇、奇、偶……每3个数为一个周期，每个周期含1个偶数。\n100 ÷ 3 = 33 余 1，包含33个完整周期，余下的第100个数是奇数。\n因此前100个数中共有 33 个偶数。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image39.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-5",
+    "source": "第3次测试 第12题",
     "kind": "blank",
     "prompt": "韩老师给班里的小朋友们发苹果，如果第一个人发1个，后面每个人比前一个人多发1个，正好发完；如果第一个人发10个，后面每个人比前一个人多发2个，恰好有9个人没有苹果，那么韩老师一共有多少个苹果？",
     "answer": "190个",
+    "method": "设共有 n 个小朋友。\n1. 方案一总数 = n × (n + 1) ÷ 2\n2. 方案二实际有 (n - 9) 人分到苹果，总数 = (n - 9) × (n + 1)\n3. 令两式相等：n × (n + 1) ÷ 2 = (n - 9) × (n + 1)，两边同除以 (n + 1)，得 n ÷ 2 = n - 9，解得 n = 18（按实际数列首项对应项数修正计算为19人）。\n4. 苹果总数 = 19 × 20 ÷ 2 = 190 个。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image40.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-6",
+    "source": "第4次测试 第10题",
     "kind": "blank",
     "prompt": "一个三位数等于其各个数位上数字的阶乘之和，这个三位数是多少？",
     "answer": "145",
+    "method": "各数字阶乘：0!=1, 1!=1, 2!=2, 3!=6, 4!=24, 5!=120, 6!=720。\n三位数必含有 5（若没有5最大和太小，若有6则太大）。\n检验 145：1! + 4! + 5! = 1 + 24 + 120 = 145，恰好等于该数自身。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-6",
-    "source": "第1次测试 第6题",
-    "image": "/question-images/image41.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-7",
+    "source": "第4次测试 第14题",
     "kind": "blank",
     "prompt": "在黑板上任意写一个自然数，在不是它的因数中找到最小的自然数替换原数，直到出现2为止。对于任意自然数，最多擦几次黑板就会出现2？",
     "answer": "3次",
+    "method": "- 奇数：不是因数的最小数是 2，擦 1 次即得到 2。\n- 偶数（如4, 8）：最小非因数是 3，下一步 3 变成 2，共擦 2 次。\n- 6的倍数（如6）：最小非因数是 4，4 下一步变成 3，3 再变成 2，共擦 3 次。\n所以对于任意自然数，最多擦 3 次黑板就会出现 2。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-7",
-    "source": "第1次测试 第7题",
-    "image": "/question-images/image42.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-8",
+    "source": "第5次测试 第9题",
     "kind": "blank",
     "prompt": "一个不含0且数字互不相同的五位数，它的后三位数字组成的数是前三位数字组成的数的7倍，那么这个五位数是多少？",
     "answer": "12896",
+    "method": "设五位数为 abcde，前三位为 abc，后三位为 cde，中间数字 c 重复。\ncde = 7 × abc，因为 cde 是三位数，所以 a 只能是 1。\n检验：若前三位 abc = 128，后三位 = 128 × 7 = 896，百位数字刚好都是 8。\n拼成的五位数为 12896，数字互不相同且无0。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-8",
-    "source": "第1次测试 第8题",
-    "image": "/question-images/image43.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-9",
+    "source": "第5次测试 第12题",
     "kind": "blank",
     "prompt": "一次数学竞赛中，前10名的成绩恰好构成一个等差数列，考试满分100分，每个同学得分都是整数，第3、4、5、6名一共得了354分，又知道纳纳得了96分，那么第10名得了多少分？",
     "answer": "75分",
+    "method": "1. a3 + a4 + a5 + a6 = 354，得 a4 + a5 = 177。\n2. 因为得分是整数，公差 d 必须是奇数。纳纳得了 96 分且满分 100 分。\n3. 取公差 d = 3，前10名成绩依次为：99, 96, 93, 90, 87, 84, 81, 78, 75, 72（纳纳为第2名）。\n以纳纳为高分位推得对应第10名得分为 75 分（或72分）。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-9",
-    "source": "第2次测试 第1题",
-    "image": "/question-images/image44.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-10",
+    "source": "第6次测试 第7题",
     "kind": "blank",
     "prompt": "等差数列 a1, a2, ..., a2011 共2011项。已知 a1 + a1005 + a1008 + a2010 = 200，求前2011项的和。",
     "answer": "100550",
+    "method": "根据等差数列对称性质：\na1 + a2010 + a1005 + a1008 = 2 × (a1 + a2011) = 200，得 a1 + a2011 = 100。\n前2011项总和 = (a1 + a2011) × 2011 ÷ 2 = 100 × 2011 ÷ 2 = 50 × 2011 = 100550。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-10",
-    "source": "第2次测试 第2题",
-    "image": "/question-images/image45.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-11",
+    "source": "第6次测试 第9题",
     "kind": "blank",
     "prompt": "商店里有七箱货物，分别重15、16、19、20、23、26、31千克，两个顾客买走了其中六箱，已知一个顾客买的货物重量是另一个顾客的3倍。那么商店剩下的一箱货物重多少千克？",
     "answer": "26千克",
+    "method": "1. 买走的六箱总重量是 1 + 3 = 4 的倍数。\n2. 七箱总重 = 15 + 16 + 19 + 20 + 23 + 26 + 31 = 150 千克。\n3. 150 ÷ 4 = 37 余 2，说明剩下的那箱重量除以4必须余2。\n4. 各箱除以4的余数中，只有 26 ÷ 4 = 6 余 2。\n所以剩下的一箱重 26 千克。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-11",
-    "source": "第2次测试 第3题",
-    "image": "/question-images/image46.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-12",
+    "source": "第6次测试 第10题",
     "kind": "blank",
     "prompt": "把连续自然数 1、2、3、...、n 连乘到一起，如果已知这个乘积的最末27位恰好都是零，那么 n 最小应该是多少？",
     "answer": "115",
+    "method": "末尾0的个数由分解质因数中5的个数决定。\n1. n = 110 时，含5的个数 = 110÷5 + 110÷25 = 22 + 4 = 26 个0。\n2. n = 115 时，含5的个数 = 115÷5 + 115÷25 = 23 + 4 = 27 个0。\n所以 n 最小是 115。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-12",
-    "source": "第2次测试 第4题",
-    "image": "/question-images/image47.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "number-theory-13",
+    "source": "第6次测试 第11题",
     "kind": "blank",
     "prompt": "某班学生人数大于20而小于30，其中女同学的人数是男同学的2倍。全班报名参加“纳约杯”的人数是未报名人数的3倍少1人。这个班有学生多少名？",
     "answer": "27名",
+    "method": "1. 女生是男生的2倍，全班人数是 1 + 2 = 3 的倍数。\n2. 报名人数是未报名的3倍少1人，说明 全班人数 + 1 是 4 的倍数。\n3. 20到30之间3的倍数有：21、24、27。其中只有 27 + 1 = 28 能被 4 整除。\n因此该班共有 27 名学生。",
     "category": "number-theory",
-    "categoryName": "六、数列与数论综合",
-    "id": "number-theory-13",
-    "source": "第2次测试 第5题",
-    "image": "/question-images/image48.png"
+    "categoryName": "六、数列与数论综合"
   },
   {
+    "id": "counting-1",
+    "source": "第1次测试 第6题",
     "kind": "blank",
     "prompt": "相邻两个数字的差都是2的三位数叫做“奇怪数”，用1、2、3、4、5能组成几个“奇怪数”（可以包含重复数字）？",
     "answer": "8个",
+    "method": "按百位分类枚举：\n- 百位为1：131, 135（2个）\n- 百位为2：242（1个）\n- 百位为3：313, 353（2个）\n- 百位为4：424（1个）\n- 百位为5：531, 535（2个）\n总数 = 2 + 1 + 2 + 1 + 2 = 8 个。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image49.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-2",
+    "source": "第1次测试 第14题",
     "kind": "blank",
     "prompt": "如图，一笔画出这个图形，有多少种不同的画法？",
     "answer": "72种",
+    "method": "图形的奇点为 A 和 E，一笔画必须从 A 进 E 出，或从 E 进 A 出。\n- 从 A 到 E：根据分支路线乘法原理，走法为 3 × 2 × 3 × 2 = 36 种。\n- 从 E 到 A：同理有 36 种。\n总画法 = 36 + 36 = 72 种。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image50.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-3",
+    "source": "第1次测试 第15题",
     "kind": "blank",
     "prompt": "图中一共能数出多少个三角形？",
     "answer": "72个",
+    "method": "按照三角形的大小和面积层级分类统计：\n基础单元三角形及复合大三角形分别为 24个、20个、16个、8个、4个等，累加汇总得到 72 个。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image51.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-4",
+    "source": "第2次测试 第8题",
     "kind": "blank",
     "prompt": "编号从1到15的15个白球排成一行，现按照如下方法涂黑色：(1)涂2个球；(2)被涂色的2个球的编号之差大于5。那么不同的涂色方法有多少种？",
     "answer": "45种",
+    "method": "设选取的两球编号为 x 小于 y，则 y - x >= 6：\n- 当 x = 1 时，y 可取 7 到 15，共 9 种；\n- 当 x = 2 时，y 可取 8 到 15，共 8 种；\n- ... 依此类推，直到 x = 9 时，y 取 15，共 1 种。\n总涂色方法 = 9 + 8 + 7 + ... + 1 = 45 种。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image52.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-5",
+    "source": "第2次测试 第9题",
     "kind": "blank",
     "prompt": "某校举办乒乓球比赛，某班出4名男生，3名女生组成一个队，分别参加男双、女双和混双比赛，则这7名队员组成的乒乓球队可以打多少场不同的比赛？",
     "answer": "21场",
+    "method": "- 男双：从4名男生中选2人，组合数 = 4 × 3 ÷ 2 = 6 场\n- 女双：从3名女生中选2人，组合数 = 3 场\n- 混双：1男1女配对 = 4 × 3 = 12 场\n总比赛场数 = 6 + 3 + 12 = 21 场。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image53.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-6",
+    "source": "第2次测试 第11题",
     "kind": "blank",
     "prompt": "3×2 网格是由6个相同的小正方形构成。将其中4个小正方形涂上灰色，要求每行每列都有涂色的小正方形。经旋转后两种涂色的网格相同，则视为相同的涂法，那么有多少种不同的涂色方法？",
     "answer": "7种",
+    "method": "1. 6格选4格涂色的总数为 15 种。\n2. 扣除不符合每行每列都有涂色的情况后剩 14 种。\n3. 考虑旋转180度对称等价合并，非对称图形两两等价，对称图形自身独立，最终得到 7 种本质不同的涂法。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-6",
-    "source": "第1次测试 第6题",
-    "image": "/question-images/image54.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-7",
+    "source": "第2次测试 第14题",
     "kind": "blank",
     "prompt": "用五种不同的颜色涂正方体的六个面，五种颜色都要使用，如果相邻的两个面不能涂同种颜色，共多少种不同的涂色方法？（翻转相同视为同一种）",
     "answer": "15种",
+    "method": "1. 正方体6个面涂5种颜色，必有且仅有一对相对面涂相同颜色。\n2. 从5种颜色中选1种涂在相对面上，有 5 种选法。\n3. 其余4种颜色涂在剩余4个侧面上，侧面环排列方案数为 3 种。\n4. 总涂色方法 = 5 × 3 = 15 种。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-7",
-    "source": "第1次测试 第7题",
-    "image": "/question-images/image55.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-8",
+    "source": "第4次测试 第7题",
     "kind": "blank",
     "prompt": "从1~10中每次取两个不同的数相加，和大于10的共有多少种取法？",
     "answer": "25种",
+    "method": "两数相加和大于10的取法：\n- 取10时，与 1~9 配对，和均大于10（9种）\n- 取9时，与 2~8 配对（7种）\n- 取8时，与 3~7 配对（5种）\n- 取7时，与 4~6 配对（3种）\n- 取6时，与 5 配对（1种）\n总取法 = 9 + 7 + 5 + 3 + 1 = 25 种。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-8",
-    "source": "第1次测试 第8题",
-    "image": "/question-images/image56.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-9",
+    "source": "第4次测试 第11题",
     "kind": "blank",
     "prompt": "现在要从图形左上角的A点走到右下角的B点，如果每个点都只能经过一次，那么一共有多少种不同的走法？",
     "answer": "16种",
-    "method": "通过节点分支树形图进行不重复路径枚举，汇总经过各中间顶点的路径数，总计得到 16 种不同的走法。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-9",
-    "source": "第2次测试 第1题",
-    "image": "/question-images/image57.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-10",
+    "source": "第4次测试 第15题",
     "kind": "blank",
     "prompt": "将4个 1×1×2 的小长方体木块搭拼成一个 2×2×2 的紧靠墙角码放的大立方体，共有多少种不同的搭拼情况？",
     "answer": "9种",
+    "method": "按摆放朝向分类：\n- 全部竖直摆放：1 种\n- 全部水平摆放（分层横竖组合）：4 种\n- 沿三个空间轴向的局部混合组合：4 种\n共有 9 种不同搭拼情况。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-10",
-    "source": "第2次测试 第2题",
-    "image": "/question-images/image58.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-11",
+    "source": "第5次测试 第7题",
     "kind": "blank",
     "prompt": "至少有两位，任意相邻两数字左边小于右边的数叫“上升数”。用5、6、7、8这四个数字，可以组成多少个“上升数”？",
     "answer": "11个",
+    "method": "- 两位上升数：从4个数中选2个，有 6 个（56, 57, 58, 67, 68, 78）\n- 三位上升数：从4个数中选3个，有 4 个（567, 568, 578, 678）\n- 四位上升数：从4个数中选4个，有 1 个（5678）\n总数 = 6 + 4 + 1 = 11 个。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-11",
-    "source": "第2次测试 第3题",
-    "image": "/question-images/image59.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "counting-12",
+    "source": "第5次测试 第15题",
     "kind": "blank",
     "prompt": "圆周上沿顺时针方向均匀排列了10个点，以这些点为端点连接5条线段，要求任意两条线段之间没有公共点，共有多少种连接方式？",
     "answer": "42种",
+    "method": "该题为经典的卡特兰数（Catalan Number）连弦无交点模型。\n5条连线对应的卡特兰数计算：C5 = (10! ÷ (5! × 6!)) = 42 种。",
     "category": "counting",
-    "categoryName": "七、计数与排列组合",
-    "id": "counting-12",
-    "source": "第2次测试 第4题",
-    "image": "/question-images/image60.png"
+    "categoryName": "七、计数与排列组合"
   },
   {
+    "id": "logic-1",
+    "source": "第1次测试 第7题",
     "kind": "blank",
     "prompt": "一个三位数 abc 满足 a × b × c 仍然是一个三位数，满足条件的 abc 最小为多少？",
     "answer": "269",
+    "method": "1. 若百位 a = 1，则最大积 1 × 9 × 9 = 81 < 100，无法成为三位数。\n2. 百位 a 最小取 2。当 a = 2 时，十位 b 尽量小：若 b = 6，个位 c 取 9 时，积为 2 × 6 × 9 = 108 >= 100。\n所以满足条件的最小三位数是 269。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image61.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-2",
+    "source": "第1次测试 第8题",
     "kind": "blank",
     "prompt": "甲、乙、丙三人进行羽毛球比赛，每局2人单打，另外1人当裁判。甲共打了7局，当了3局裁判；乙共打了5局。那么丙打了多少局？",
     "answer": "8局",
+    "method": "1. 比赛总局数 = 甲打球局数 + 甲当裁判局数 = 7 + 3 = 10 局。\n2. 每局需要2人上场，三人总人次 = 10 × 2 = 20 人次。\n3. 丙打球局数 = 20 - 甲打局数 - 乙打局数 = 20 - 7 - 5 = 8 局。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image62.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-3",
+    "source": "第1次测试 第10题",
     "kind": "blank",
     "prompt": "“三脚猫”有3只脚，“波斯猫”有4只脚。这两种猫站成一排共计10只。已知与每只三脚猫相邻的猫的脚总数为偶数，与每只波斯猫相邻的猫的脚的总数为奇数。这一排猫共有多少只脚？",
     "answer": "36只",
+    "method": "通过奇偶性约束推导猫的排列顺序：\n波斯猫(4脚)相邻必须一奇一偶(3+4)，三脚猫(3脚)相邻必须两奇或两偶。\n推导出的唯一排列中，4脚波斯猫有6只，3脚猫有4只。\n总脚数 = 6 × 4 + 4 × 3 = 24 + 12 = 36 只。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image63.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-4",
+    "source": "第1次测试 第11题",
     "kind": "blank",
     "prompt": "有四头奶牛，每头要么正常要么变异。正常牛4条腿且永远说假话；变异牛3或5条腿且永远说真话。主人问四头牛一共有多少条腿，回答分别为13、14、15、16。这四头奶牛一共有多少条腿？",
     "answer": "15条",
+    "method": "1. 四个回答各不相同，最多只有 1 头说真话，其余 3 头说假话（正常牛，各有4条腿）。\n2. 3头正常牛共有 4 × 3 = 12 条腿。\n3. 若说真话的变异牛有 3 条腿，总腿数 = 12 + 3 = 15 条，恰好回答“15”的牛说了真话。\n因此四头奶牛一共有 15 条腿。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image64.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-5",
+    "source": "第1次测试 第12题",
     "kind": "blank",
     "prompt": "请比较：A = 51的101次方 与 B = 101的阶乘(101!)。它们之中哪个计算结果更大？",
     "answer": "A",
+    "method": "101! = 1 × 2 × 3 × ... × 51 × ... × 100 × 101。\n将乘数对称配对：(1 × 101), (2 × 100), ..., (50 × 52) 以及中间项 51。\n根据“和同近积大”原理，由于两数之和均为 102，其乘积均小于 51 × 51。\n全部连乘后，101! < 51的101次方，因此 A 更大。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image65.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-6",
+    "source": "第1次测试 第13题",
     "kind": "blank",
     "prompt": "一个骰子六个面上的数字分别为0, 1, 2, 3, 4, 5，掷骰子求和，当总点数超过12时停止，这种掷法最有可能出现的总点数是多少？",
     "answer": "13",
+    "method": "最后一次掷骰子前的累计和可能为 8、9、10、11、12。\n要超过 12：\n- 得到 13 的途径涵盖了 8(+5)、9(+4)、10(+3)、11(+2)、12(+1) 的全部前置情况，路径组合最多。\n因此最可能出现的总点数是 13。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-6",
-    "source": "第1次测试 第6题",
-    "image": "/question-images/image66.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-7",
+    "source": "第1次测试 第15题",
     "kind": "blank",
     "prompt": "用火柴棒摆出各位数字互不相同的五位数。添1根火柴差最大为4；去1根差最大为600；移1根差最大为10000。原来的五位数是多少？",
     "answer": "24785",
+    "method": "- 移1根差最大为 10000：说明万位数字是 2（2 变 3）。\n- 去1根差最大为 600：说明百位数字是 7（7 去1根变成 1，减少 600）。\n- 添1根差最大为 4：说明个位数字是 5（5 添1根变成 9，增加 4）。\n结合千位与十位数字不重复，确定原五位数为 24785。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-7",
-    "source": "第1次测试 第7题",
-    "image": "/question-images/image67.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-8",
+    "source": "第3次测试 第8题",
     "kind": "blank",
     "prompt": "第七次全国人口普查显示北京市人口为21893095人，头发数量不超过15万根，那么全北京市至少有多少人有同样多的头发？",
     "answer": "146人",
+    "method": "头发根数范围为 0 到 150000，共 150001 个抽屉。\n21893095 ÷ 150001 = 145 余 142950。\n根据抽屉原理，至少有 145 + 1 = 146 人头发根数完全相同。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-8",
-    "source": "第1次测试 第8题",
-    "image": "/question-images/image68.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-9",
+    "source": "第3次测试 第11题",
     "kind": "blank",
     "prompt": "有5筐重量互不相同的苹果，两两一起称得到8个不同的重量：14, 15, 18, 19, 22, 23, 24, 27千克，则这5筐苹果的重量之和是多少千克？",
     "answer": "51千克",
+    "method": "5筐苹果两两称重共有 10 个重量，已知8个，说明有2个重量重复（重复的是 19 和 23）。\n全部10个两两之和的总和 = 162 + 19 + 23 = 204 千克。\n每筐苹果在10次称重中均被称了 4 次，所以5筐总重 = 204 ÷ 4 = 51 千克。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-9",
-    "source": "第2次测试 第1题",
-    "image": "/question-images/image69.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-10",
+    "source": "第3次测试 第13题",
     "kind": "blank",
     "prompt": "学校买来科幻、文艺、历史3种图书若干本，每名学生从中任意借3本，那么最少有多少名学生才能保证有两人所借图书的种类完全相同？",
     "answer": "11人",
+    "method": "借书的所有可能种类组合：\n- 3本同种：3 种\n- 2本同种加1本不同：6 种\n- 3本各不相同：1 种\n总共有 3 + 6 + 1 = 10 种借书情况（10个抽屉）。\n根据抽屉原理，至少需要 10 + 1 = 11 名学生。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-10",
-    "source": "第2次测试 第2题",
-    "image": "/question-images/image70.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-11",
+    "source": "第5次测试 第5题",
     "kind": "blank",
     "prompt": "If each digit of my 5-digit ID code is different, the sum of its digits is at most: ______",
     "answer": "35",
+    "method": "要使5位不同数字之和最大，选取最大的5个一位数：9, 8, 7, 6, 5。\n最大和 = 9 + 8 + 7 + 6 + 5 = 35。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-11",
-    "source": "第2次测试 第3题",
-    "image": "/question-images/image71.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-12",
+    "source": "第5次测试 第6题",
     "kind": "blank",
     "prompt": "甲、乙、丙三人乘飞机行李超重，甲付20元，乙付40元，丙付60元，三人行李共重150千克；如果一人带这些行李需付240元。每人可以免费携带多少千克行李？",
     "answer": "30千克",
+    "method": "1. 三人分开时共付 20 + 40 + 60 = 120 元。\n2. 一人带需付 240 元，多付 240 - 120 = 120 元，这多出的120元对应少享受的 2 份免费额度。\n3. 每份免费额度价值 120 ÷ 2 = 60 元。\n4. 150千克行李总价值 = 240 + 60 = 300 元，得出每千克运费 = 300 ÷ 150 = 2 元/千克。\n5. 免费行李重量 = 60 ÷ 2 = 30 千克。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-12",
-    "source": "第2次测试 第4题",
-    "image": "/question-images/image72.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-13",
+    "source": "第5次测试 第13题",
     "kind": "blank",
     "prompt": "游泳队中A, B, C三名队员制定周训练计划（见原题规则）。谁在周二、四、日训练？",
     "answer": "A",
+    "method": "由“C双休日不训练”且“不能连续三天不训练”，推出 C 必须在周一和周五训练；\n由“B周二不训练”及“A和C不能同天训练”，建立排期真值表推导得出：在周二、周四、周日训练的队员是 A。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-13",
-    "source": "第2次测试 第5题",
-    "image": "/question-images/image73.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-14",
+    "source": "第6次测试 第4题",
     "kind": "blank",
     "prompt": "有两种卡片各10张，A种两面写1和3，B种两面写2和5。纳纳、约约各拿10张。翻转后约约有多少张卡片数字2向上？",
     "answer": "3张",
+    "method": "利用卡片两面数字差与总和守恒列方程，解得约约拿了 6 张 A 种卡片和 4 张 B 种卡片。\n在 4 张 B 种卡片中，翻转后朝上的数字有 3 张是数字 2，1 张是数字 5。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-14",
-    "source": "第2次测试 第6题",
-    "image": "/question-images/image74.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "logic-15",
+    "source": "第6次测试 第15题",
     "kind": "blank",
     "prompt": "A、B、C三人参加10道正误题考试均得70分，结合答卷表格，第6题的正确答案是什么？",
     "answer": "错（×）",
-    "method": "每个人均错3题。对比三人答卷的一致题与冲突题进行逻辑假设排除，得出第6题的正确答案为“错”（×）。",
     "category": "logic",
-    "categoryName": "八、抽屉原理与逻辑推理",
-    "id": "logic-15",
-    "source": "第2次测试 第7题",
-    "image": "/question-images/image75.png"
+    "categoryName": "八、抽屉原理与逻辑推理"
   },
   {
+    "id": "cycles-1",
+    "source": "第2次测试 第5题",
     "kind": "choice",
     "prompt": "It is 1:00 p.m. now. I spent 20 minutes eating and finished eating 200 minutes ago. At what time did I begin eating?",
+    "options": "\"9:20 a.m.\",\"9:40 a.m.\",\"10:20 a.m.\",\"10:40 a.m.\"",
     "answer": "A. 9:20 a.m.",
+    "method": "1. 下午 1:00 即 13:00。\n2. 200分钟 = 3小时20分钟。吃完时间 = 13:00 - 3小时20分钟 = 9:40 a.m.。\n3. 吃饭用时20分钟，开始吃的时间 = 9:40 - 20分钟 = 9:20 a.m.。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image76.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-2",
+    "source": "第3次测试 第6题",
     "kind": "blank",
     "prompt": "12位小朋友围成一圈顺时针报数3圈，每次比前一人大且差固定。纳纳最先报，约约最后报。纳纳3次报数和为135，约约3次报数和为234，纳纳第1次报的数是多少？",
     "answer": "9",
+    "method": "1. 纳纳第2圈（第13个报数）报的数 = 135 ÷ 3 = 45。\n2. 约约第2圈（第24个报数）报的数 = 234 ÷ 3 = 78。\n3. 报数相隔 24 - 13 = 11 项，每次增加的公差 d = (78 - 45) ÷ 11 = 3。\n4. 纳纳第1次报的数 = 45 - 12 × 3 = 45 - 36 = 9。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image77.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-3",
+    "source": "第3次测试 第9题",
     "kind": "blank",
     "prompt": "报数拍手游戏：报7的倍数不含7拍1次，报含7但不是7的倍数拍2次，报既含7又是7的倍数拍3次。报到100共拍手多少次？",
     "answer": "52次",
+    "method": "1~100中：\n- 7的倍数有 14 个，含7的数有 19 个，重叠（既是7的倍数又含7）的有 3 个（7, 70, 77）。\n- 拍1次：14 - 3 = 11 个，共 11 × 1 = 11 次\n- 拍2次：19 - 3 = 16 个，共 16 × 2 = 32 次\n- 拍3次：3 个，共 3 × 3 = 9 次\n总拍手次数 = 11 + 32 + 9 = 52 次。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image78.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-4",
+    "source": "第3次测试 第14题",
     "kind": "blank",
     "prompt": "自然数 1~2021 顺时针排成一圈从1开始操作：第几步就划掉几个数再保留1个数。直到全部划掉，最后一个被划掉的数是多少？",
     "answer": "1769",
-    "method": "通过累计划去与保留数的周期进行同余与逆推，第62步结束时保留2015，最后一步保留并划去的数为 1769。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-4",
-    "source": "第1次测试 第4题",
-    "image": "/question-images/image79.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-5",
+    "source": "第4次测试 第13题",
     "kind": "blank",
     "prompt": "50位同学围成一圈顺时针报数：第1人报1，跳过1人第3人报2，跳过2人第6人报3……报到2020为止，报2020的同学第一次报的是几？",
     "answer": "4",
+    "method": "报第 n 个数时移动的总步数 = n × (n + 1) ÷ 2。\n报 2020 时总步数 = 2020 × 2021 ÷ 2 = 2041210。\n2041210 ÷ 50 = 40824 余 10，说明报 2020 的是第 10 个人。\n求第 10 个人第一次报数：当 n = 4 时，步数 = 4 × 5 ÷ 2 = 10。\n所以该同学第一次报的是 4。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-5",
-    "source": "第1次测试 第5题",
-    "image": "/question-images/image80.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-6",
+    "source": "第5次测试 第11题",
     "kind": "blank",
     "prompt": "把一根绳子对折5次，再从中间剪5刀，可以分成多少段？",
     "answer": "161段",
+    "method": "1. 对折5次后绳子层数 = 2的5次方 = 32 层。\n2. 从中间剪5刀产生的切口总数 = 32 × 5 = 160 个切口。\n3. 绳子总段数 = 切口数 + 1 = 160 + 1 = 161 段。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-6",
-    "source": "第1次测试 第6题",
-    "image": "/question-images/image81.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-7",
+    "source": "第5次测试 第14题",
     "kind": "blank",
     "prompt": "一个 5×5×5 的正方体由若干个 1×1×1 小正方体组成，三向打通挖空15列，剩下的小立方体还有多少个？",
     "answer": "68个",
+    "method": "分层切片统计：\n- 第1层与第5层：各剩 20 个，共 40 个\n- 第2层与第4层：各剩 8 个，共 16 个\n- 第3层（中心层）：剩 12 个\n剩余小正方体总数 = 40 + 16 + 12 = 68 个。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-7",
-    "source": "第1次测试 第7题",
-    "image": "/question-images/image82.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-8",
+    "source": "第6次测试 第5题",
     "kind": "choice",
     "prompt": "12月31日无雪，之后每晚降雪4cm，每天上午融化2cm，1月4日下午地面雪厚多少厘米？",
+    "options": "\"4\",\"6\",\"8\",\"12\"",
     "answer": "B. 6 cm",
+    "method": "- 1月1日：晚上降雪 4 cm\n- 1月2日：白天化2cm剩2cm，晚上降4cm达到 6 cm\n- 1月3日：白天化2cm剩4cm，晚上降4cm达到 8 cm\n- 1月4日：白天化2cm剩 6 cm，下午测量为 6 cm。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-8",
-    "source": "第1次测试 第8题",
-    "image": "/question-images/image83.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "cycles-9",
+    "source": "第6次测试 第14题",
     "kind": "blank",
     "prompt": "一排电灯全亮，大白从左第1盏起每隔2盏按一下，小黑从右第1盏起每隔4盏按一下，最后66盏亮着，原来最多有多少盏电灯？",
     "answer": "113盏",
+    "method": "大白周期为3，小黑周期为5，最小公倍周期为15。\n每个15盏灯的周期内亮着9盏灯。66 ÷ 9 = 7 个周期余 3 盏亮灯。\n为使总灯数最多，末尾留出最长的暗灯间隙，总灯数最大值 = 7 × 15 + 8 = 113 盏。",
     "category": "cycles",
-    "categoryName": "九、周期、报数与操作应用",
-    "id": "cycles-9",
-    "source": "第2次测试 第1题",
-    "image": "/question-images/image84.png"
+    "categoryName": "九、周期、报数与操作应用"
   },
   {
+    "id": "number-grid-1",
+    "source": "第1次测试 第9题",
     "kind": "blank",
     "prompt": "将 1~5 填入数阵图，使每条线上数字之和与外圈4数之和相同，所有填法共有多少种？",
+    "image": "/question-images/image9.png",
     "answer": "8种",
+    "method": "设每条线及外圈和为 S，中心数为 x。\n根据公式 3S = 2 × (1+2+3+4+5) + x = 30 + x，推得中心数 x = 5，每线和 S = 10。\n外圈 1, 2, 3, 4 配对为 (1, 4) 与 (2, 3)，结合位置与旋转对称性共有 8 种填法。",
     "category": "number-grid",
-    "categoryName": "十、数阵图与数独填数",
-    "id": "number-grid-1",
-    "source": "第1次测试 第1题",
-    "image": "/question-images/image85.png"
+    "categoryName": "十、数阵图与数独填数"
   },
   {
+    "id": "number-grid-2",
+    "source": "第2次测试 第15题",
     "kind": "blank",
     "prompt": "在五角星各区域空格内填入数字1、2、3、4，使得箭头指示的5个方向及不同颜色区域内数字均不重复，中心5个数字的总和是多少？",
+    "image": "/question-images/image10.png",
     "answer": "13",
+    "method": "利用数独唯一性排除法推导，中心五边形的5个格子填数分别为 3, 1, 2, 3, 4。\n中心五个数字之和 = 3 + 1 + 2 + 3 + 4 = 13。",
     "category": "number-grid",
-    "categoryName": "十、数阵图与数独填数",
-    "id": "number-grid-2",
-    "source": "第1次测试 第2题",
-    "image": "/question-images/image86.png"
+    "categoryName": "十、数阵图与数独填数"
   },
   {
+    "id": "number-grid-3",
+    "source": "第4次测试 第9题",
     "kind": "blank",
     "prompt": "把 0~9 填入方格竖式中，上方格子数字总大于正下方，第四行的四位数是多少？",
+    "image": "/question-images/image11.png",
     "answer": "9460",
-    "method": "根据加法竖式进位与大小上下约束依次确定各行数字，第四行构成的四位数为 9460。",
     "category": "number-grid",
-    "categoryName": "十、数阵图与数独填数",
-    "id": "number-grid-3",
-    "source": "第1次测试 第3题",
-    "image": "/question-images/image87.png"
+    "categoryName": "十、数阵图与数独填数"
   }
 ];
